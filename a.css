@@ -209,6 +209,31 @@ a {
 .certificate-list li {
   margin-bottom: 10px;
 }
+/* Video Resume Section */
+#video-resume {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+#video-resume h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 800px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
 
 .home-content {
   width: 100%;
