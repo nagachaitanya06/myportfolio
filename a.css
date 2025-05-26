@@ -1,0 +1,491 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fb;
+  color: #1e1e2f;
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Scroll to top button */
+.scroll-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #4f46e5;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu li a {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #1e1e2f;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #4f46e5;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4f46e5;
+}
+.skills-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #4f46e5; /* your purple-blue color */
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #3730a3; /* slightly darker shade */
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-list li {
+  background: #e0e7ff; /* light blue background */
+  color: #4f46e5;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.skill-list li:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Home Section */
+.home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg);
+  color: blue; /* This sets default color */
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Target the text inside .home-content */
+.home-content .text {
+  color: #4f46e5; /* dark blue */
+}
+.intro-text h1 {
+  color: #4f46e5; /* dark blue for entire heading */
+}
+
+.intro-text h1 .highlight {
+  color: #4f46e5; /* override highlight span to dark blue as well */
+}
+
+/* Or, if you want to be more specific for each line */
+.home-content .text-one,
+.home-content .text-two {
+  color: #4f46e5; /* dark blue */
+}
+
+/* Certificates Section Styles */
+.certificate-section {
+  background-color: white; /* Dark Blue */
+  color: #4f46e5;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.certificate-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.certificate-list {
+  list-style-type: square;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.certificate-list li {
+  margin-bottom: 10px;
+}
+
+.home-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text .highlight {
+  color: #e0e7ff;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.about-wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text p {
+  font-size: 1.125rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+/* Skills Section */
+.skills {
+  padding: 4rem 0;
+  background: #f4f5ff;
+  text-align: center;
+}
+
+.skills-intro {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgb(79 70 229 / 0.4);
+  user-select: none;
+  transition: background 0.3s ease;
+  cursor: default;
+}
+
+.skill:hover {
+  background: #4338ca;
+}
+
+/* Projects Section */
+.projects {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.featured-project {
+  display: flex;
+  gap: 2rem;
+  background: #f9fafc;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.08);
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img {
+  width: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  max-width: 600px;
+}
+
+.project-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-tags span {
+  background: #ddd;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.project-tags.blue span {
+  background: #bfdbfe;
+  color: #1e40af;
+}
+
+.project-tags.green span {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+/* Project links */
+.project-links a {
+  font-size: 1.4rem;
+  color: #4f46e5;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #4338ca;
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  gap: 2rem;
+}
+
+/* Project cards */
+.project-card {
+  background: #f9fafc;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  box-shadow: 0 15px 35px rgb(0 0 0 / 0.15);
+}
+
+.project-card .project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0;
+  background: #f4f5ff;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.contact-info i {
+  margin-right: 0.8rem;
+  color: #4f46e5;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: #4f46e5;
+  margin: 0 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.about-wrapper {
+flex-direction: column;
+}
+
+.featured-project {
+flex-direction: column;
+}
+
+.menu {
+display: none;
+}
+
+.menu-toggle {
+display: block;
+}
+}

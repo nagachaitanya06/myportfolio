@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagachaitanya Portfolio</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="D:/portfolio/a.css" />
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- Scroll to top button -->
+  <button class="scroll-button" aria-label="Scroll to top" style="display:none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container">
+      <a href="#" class="logo">Nagachaitanya.</a>
+      <ul class="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#myskills">Skills</a></li>
+        <li><a href="#services">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Menu toggle button -->
+      <button class="menu-toggle" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Cancel/close button for side menu -->
+      <button class="cancel-btn" aria-label="Close menu" style="display:none;">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <header class="home" id="home">
+    <div class="container home-content">
+      <div class="intro-text">
+        <h1>Hello, I'm <span class="highlight">Nagachaitanya</span></h1>
+        <p class="subheading">Passionate Developer & Learner</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-content">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-wrapper">
+        <div class="about-image">
+          <img src="chaitanya.jpg" alt="Nagachaitanya Profile Image" />
+        </div>
+        <div class="about-text">
+          <p>
+            I am a B.Tech CSE (Data Science) student at BVRIT, passionate about building innovative software solutions.
+            With a strong foundation in Java, Python, Web Development, and AI, I've developed full-stack projects and
+            contributed to Telugu LLM development during my internship at Swecha. I thrive in dynamic environments
+            and love transforming ideas into code.
+          </p>
+          <a href="22211A6726_Nagachaitanya.pdf" download="Nagachaitanya_Resume.pdf" class="btn-primary">View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="myskills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>Web Development</h3>
+        <ul class="skill-list">
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>Data Science</h3>
+        <ul class="skill-list">
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>Matplotlib</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="services">
+    <div class="container projects-content">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="featured-project">
+        <img src="audio_proj.png" alt="AI-Powered Audio Description" class="project-img" />
+        <div class="project-info">
+          <h3>AI-Powered Audio Description</h3>
+          <p>Built using OpenCV, TensorFlow, and TTS to aid visually impaired users with real-time image captioning and speech.</p>
+          <div class="project-tags">
+            <span>OpenCV</span>
+            <span>TensorFlow</span>
+            <span>TTS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/nagachaitanya06/AI-powered-tool" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="traffic_sign.jpg" alt="Traffic Sign Recognition" class="project-img" />
+          <div class="project-info">
+            <h3>Traffic Sign Recognition</h3>
+            <p>Real-time detection of traffic signs using YOLOv8 and the GTSRB dataset, improving road safety through accurate visual recognition.</p>
+            <div class="project-tags blue">
+              <span>YOLOv8</span>
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>GTSRB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nagachaitanya06/traffic-sign-detection" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="food-rec.jpg" alt="Food Recipe Recommendation" class="project-img" />
+          <div class="project-info">
+            <h3>Food Recipe Recommendation</h3>
+            <p>An intelligent recipe suggestion system using NLP and ingredient matching to offer personalized meal ideas based on preferences.</p>
+            <div class="project-tags green">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nagachaitanya06/food-recipe-website" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="file:///D:/food/food1/food/index.html" target="_blank" rel="noopener noreferrer" aria-label="External Link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Certificates Section -->
+<section id="certificates" class="certificate-section">
+  <h2>Certificates</h2>
+  <ul class="certificate-list">
+    <li>Java Fundamentals - Oracle Academy</li>
+    <li>Java Foundations - Oracle Academy</li>
+    <li>Python - NPTEL Swayam</li>
+    <li>Python - CodeChef</li>
+    <li>Soft Skills - NPTEL Swayam</li>
+    <li>Mentored a Team in Failthon 2023 - BVRIT</li>
+    <li>Spoken English - British Council</li>
+  </ul>
+</section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-content">
+      <h2 class="section-title">Let's Connect!</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:22211a6726@bvrit.ac.in">22211a6726@bvrit.ac.in</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+916300271507">+91-6300271507</a></p>
+        <div class="social-links">
+          <a href="https://github.com/nagachaitanya06" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nagachaitanya-cheruvupally-0471b82b4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="D:/portfolio/a.js"></script>
+</body>
+</html>
